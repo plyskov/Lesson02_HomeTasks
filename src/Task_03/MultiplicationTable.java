@@ -13,8 +13,8 @@ public class MultiplicationTable {
         String multipliableString = Integer.toString(multipliable);
 
         for (int multiplier = 1; multiplier <= 10; multiplier++){
-            // q: Как правильнее: сразу делать счетчик цикла в нужных пределах (от 1 до 10), или начинать с 0,
-            //    а в теле цикла использовать для вычислений другую переменную со значением (счетчик + 1)?
+            // q: Как правильнее: делать счетчик цикла в нужных пределах (от 1 до 10), или начинать с 0 и идти до 9,
+            //    а в теле цикла использовать для вычислений переменную со значением (счетчик + 1)?
             interaction.outputIntegerResult((int) calculator.multiply(multipliable, multiplier),
                     multipliableString + " x " + multiplier + " = ");
         }

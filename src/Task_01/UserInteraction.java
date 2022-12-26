@@ -27,13 +27,11 @@ public class UserInteraction {
     }
 
     public void outputDoubleResult(double result, String outputMessage){
-        System.out.println(outputMessage + " " + result);
-        // q: Так нормально делать по правилам хорошего тона (добавлять пробел в выводящем методе)?
-        //    Или лучше избегать неявного добавления символов к переданному сообщению и передавать outputMessage сразу с пробелом?
+        System.out.println(outputMessage + result);
     }
 
     public void outputIntegerResult(int result, String outputMessage){
-        System.out.println(outputMessage + " " + result);
+        System.out.println(outputMessage + result);
     }
 
 }

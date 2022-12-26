@@ -22,10 +22,10 @@ public class CalculatorDemo {
             return;
         }
 
-        interaction.outputDoubleResult(calculator.add(number1, number2), "The sum is");
-        interaction.outputDoubleResult(calculator.subtract(number1, number2), "The substraction is");
-        interaction.outputDoubleResult(calculator.multiply(number1, number2), "The multiplication is");
-        interaction.outputDoubleResult(calculator.divide(number1, number2), "The division is");
+        interaction.outputDoubleResult(calculator.add(number1, number2), "The sum is ");
+        interaction.outputDoubleResult(calculator.subtract(number1, number2), "The substraction is ");
+        interaction.outputDoubleResult(calculator.multiply(number1, number2), "The multiplication is ");
+        interaction.outputDoubleResult(calculator.divide(number1, number2), "The division is ");
 
     }
 
