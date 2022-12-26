@@ -17,8 +17,8 @@ public class CalculatorDemo {
             //    Или лучше выводить сообщение об ошибке входных данных непосредственно в методе проверки, т. е. в calculator.checkDivider?
             //    Или, может, лучше не прерывать программу в целом,
             //    а вывести сообщение об ошибке деления на 0 непосредственно в методе, выполняющем деление?
-            System.out.println("The second number is incorrect: division by zero is not allowed.");
-            System.out.println("Please run the application again with the correct parameters.");
+            System.out.println("The second number is incorrect: division by zero is not allowed.\n" +
+                               "Please run the application again with the correct parameters.");
             return;
         }
 
