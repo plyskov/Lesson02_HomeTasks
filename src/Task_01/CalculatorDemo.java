@@ -7,8 +7,8 @@ public class CalculatorDemo {
         UserInteraction interaction = new UserInteraction();
         Calculator calculator = new Calculator();
 
-        double number1 = interaction.requestNumber("Input the first number:");
-        double number2 = interaction.requestNumber("Input the second number:");
+        double number1 = interaction.requestDoubleNumber("Input the first number:");
+        double number2 = interaction.requestDoubleNumber("Input the second number:");
 
         boolean checkDividerResult = calculator.checkDivider(number2);
 
@@ -22,10 +22,10 @@ public class CalculatorDemo {
             return;
         }
 
-        interaction.outputResult(calculator.add(number1, number2), "The sum is");
-        interaction.outputResult(calculator.subtract(number1, number2), "The substraction is");
-        interaction.outputResult(calculator.multiply(number1, number2), "The multiplication is");
-        interaction.outputResult(calculator.divide(number1, number2), "The division is");
+        interaction.outputDoubleResult(calculator.add(number1, number2), "The sum is");
+        interaction.outputDoubleResult(calculator.subtract(number1, number2), "The substraction is");
+        interaction.outputDoubleResult(calculator.multiply(number1, number2), "The multiplication is");
+        interaction.outputDoubleResult(calculator.divide(number1, number2), "The division is");
 
     }
 

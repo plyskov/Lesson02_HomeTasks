@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class UserInteraction {
 
-    public double requestNumber(String questionMessage){
+    public double requestDoubleNumber(String questionMessage){
 
         Scanner inputter = new Scanner(System.in);
 
@@ -16,10 +16,24 @@ public class UserInteraction {
 
     }
 
-    public void outputResult(double result, String outputMessage){
+    public int requestIntegerNumber(String questionMessage){
+
+        Scanner inputter = new Scanner(System.in);
+
+        System.out.println(questionMessage);
+
+        return inputter.nextInt();
+
+    }
+
+    public void outputDoubleResult(double result, String outputMessage){
         System.out.println(outputMessage + " " + result);
         // q: Так нормально делать по правилам хорошего тона (добавлять пробел в выводящем методе)?
         //    Или лучше избегать неявного добавления символов к переданному сообщению и передавать outputMessage сразу с пробелом?
+    }
+
+    public void outputIntegerResult(int result, String outputMessage){
+        System.out.println(outputMessage + " " + result);
     }
 
 }
